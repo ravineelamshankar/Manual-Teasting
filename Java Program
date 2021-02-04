@@ -1,0 +1,163 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@ravineelamshankar 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+binaykm03
+/
+Java
+0
+0
+0
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Java/Programs
+@binaykm03
+binaykm03 Update and rename P1 to Programs
+Latest commit 7a5b250 on Aug 10, 2018
+ History
+ 1 contributor
+116 lines (104 sloc)  1.93 KB
+  
+// WAP to print the numbers from 1 to N.
+class P1{
+public static void main(String as[]){
+int n = Integer.parseInt(as[0]);
+if(n>=1){
+for(int i=1; i<=n;i++){
+System.out.println(i);
+}}
+else
+System.out.println("Please enter positve number");
+}
+}
+
+// WAP to print Even numbers from M to N.
+
+class P2{
+public static void main(String as[]){
+int m=Integer.parseInt(as[0]);
+int n=Integer.parseInt(as[1]);
+if(m<n){
+for(int i=m;i<=n;i++){
+System.out.println(i);
+}
+}
+else{
+System.out.println("1st number should be smaller then 2nd number");
+}
+}
+}
+
+// WAP to print Even numbers from M to N.
+
+class P3{
+public static void main(String as[]){
+int m=Integer.parseInt(as[0]);
+int n=Integer.parseInt(as[1]);
+if(m<n){
+for(int i=m;i<=n;i++){
+if(i%2==0) {
+System.out.println(i);
+}
+}
+}
+else{
+System.out.println("1st number should be smaller then 2nd number");
+}
+}
+}
+
+//WAP to print divisible of given number.
+
+class P4{
+public static void main(String as[]){
+int n=Integer.parseInt(as[0]);
+int count=0;
+for(int i=1;i<=n;i++){
+if(n%i==0){
+System.out.println(i);
+count++;
+}
+}
+System.out.println("Total number of divisible of " +n+" is "+count);
+}
+}
+
+// WAP to check given number is prime or not.
+
+class P5{
+public static void main(String as[]){
+int n=Integer.parseInt(as[0]);
+int count=0;
+for(int i=1;i<=n;i++){
+if(n%i==0){
+count++;
+}
+}
+if(count==2){
+System.out.println(n+" Number is prime number");
+}
+else{
+System.out.println(n+" Number is not Prime");
+}
+}
+}
+
+// WAP to check given number is prime or not.Optmization level - 1.
+
+class P5A{
+public static void main(String as[]){
+int n=Integer.parseInt(as[0]);
+int count=0;
+for(int i=2;i<=n;i++){
+if(n%i==0){
+count++;
+break;
+}
+if(count==0){
+System.out.println("Number is Prime");
+}
+else
+System.out.println("Number is Prime");
+}
+}
+}
+//WAP to us Command line argument.
+
+class CLA{
+public static void main(String as[]){
+System.out.println("Lenght = " +as.length);
+System.out.println("------------------");
+for(String str:as){
+System.out.println(str);
+}
+}
+}
+
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
